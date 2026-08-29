@@ -2,10 +2,8 @@
 name: CI - Model Regression on schedule
 
 on:
-  schedule:
-    # Run once a week
-    - cron: "1 23 * * */7"
-
+  push:
+    branches: [main]
 env:
   GKE_ZONE: us-central1
   GCLOUD_VERSION: "318.0.0"
