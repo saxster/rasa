@@ -5,9 +5,8 @@
 name: Cron Test to Check Pip Installation
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-
+  push:
+    branches: [main]
 jobs:
   build:
     runs-on: ${{ matrix.os }}
