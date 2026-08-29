@@ -7,8 +7,6 @@ on:
       - "documentation"
     tags:
       - "**"
-  pull_request:
-
 concurrency:
   # group workflow runs based on the branch or the tag ref
   group: documentation-${{ github.ref }}
