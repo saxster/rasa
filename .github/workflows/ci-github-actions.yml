@@ -6,8 +6,6 @@ on:
       - main
     tags:
       - "*"
-  pull_request:
-
 env:
   DEFAULT_PYTHON_VERSION: "3.10"
 
