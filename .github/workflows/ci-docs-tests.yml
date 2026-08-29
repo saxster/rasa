@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize, labeled]
-
 concurrency:
   group: ci-docs-tests-${{ github.ref }} # branch name
   cancel-in-progress: true
