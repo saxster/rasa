@@ -6,8 +6,6 @@ on:
       - main
     tags:
       - "*"
-  pull_request:
-
 concurrency:
   group: continous-integration-${{ github.ref }} # branch or tag name
   cancel-in-progress: true
