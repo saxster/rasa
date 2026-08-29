@@ -1,9 +1,7 @@
 name: Check if dependencies can be updated and create a pull request with updated ones.
 on:
-  schedule:
-    # Run at 05:00 on Wednesday
-    - cron:  '0 5 * * 3'
-
+  push:
+    branches: [main]
 jobs:
   update_dependencies:
     runs-on: ubuntu-24.04
