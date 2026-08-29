@@ -1,9 +1,8 @@
 name: Security Scans
 
 on:
-  pull_request:
-    types: [opened, synchronize, labeled]
-
+  push:
+    branches: [main]
 concurrency:
   group: security-scans-${{ github.head_ref }} # head branch name
   cancel-in-progress: true
